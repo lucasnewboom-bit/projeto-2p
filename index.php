@@ -1,4 +1,5 @@
 <?php include 'inc/header.inc.php'; ?>
+//Jean esteve aqui
 <div class= "container">
     <div class ="side"> 
         <section class="busca">
