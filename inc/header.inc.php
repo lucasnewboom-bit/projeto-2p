@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html Lang="pt-br">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-witdh, initial-scale =1.0">
-     <title>Boccato</title>
-     <link rel="stylesheet" type="text/css" href=css/style.css>
-     <link rel="icon" type="image/png" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boccato</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
 <body>
@@ -17,7 +21,7 @@
        <button class="menu-toggle" aria-label = "Abrir menu">&#9776;</button>
        <nav class="menu">
         <a href="index.php">Inicio</a>
-        <a href="#">Cadastrar</a>
+        <a href="cadastro-form.php">Cadastrar</a>
         <a href="#">Produtos</a>
         <a href="#">Sobre</a>
         <a href="#">Contatos</a>

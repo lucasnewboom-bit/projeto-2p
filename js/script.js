@@ -1,8 +1,11 @@
 let slides = document.querySelectorAll(".slideshow img");
-
 let slideAtual = 0;
 
 function mostrarSlide() {
+
+    if (slides.length === 0) {
+        return;
+    }
 
     slides.forEach(function(slide) {
         slide.classList.remove("ativo");
@@ -13,6 +16,10 @@ function mostrarSlide() {
 
 function proximoSlide() {
 
+    if (slides.length === 0) {
+        return;
+    }
+
     slideAtual++;
 
     if (slideAtual >= slides.length) {
@@ -22,12 +29,8 @@ function proximoSlide() {
     mostrarSlide();
 }
 
-
-// Quando a página carregar
 mostrarSlide();
 
-
-// Quando clicar na imagem
 slides.forEach(function(slide) {
 
     slide.addEventListener("click", function() {
@@ -36,6 +39,4 @@ slides.forEach(function(slide) {
 
 });
 
-
-// Troca automaticamente a cada 5 segundos
 setInterval(proximoSlide, 5000);
